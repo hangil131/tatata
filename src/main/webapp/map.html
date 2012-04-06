@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<title>지도</title> 
+<link type="text/css" href="css/redmond/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=5a7a65aff03055f8ff312aa97c4eaff1665a3681" charset="utf-8"></script> 
+<script type="text/javascript" src="js/graph.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/daum.js"></script>
+</head> 
+<body onload="init()">
+	<input id="tags1">
+	<input id="tags2">
+	<div>
+		<span id=srcWrap>
+		출발지
+		<select id=src>
+			<option value=-1>나들목</option>
+			<option value=0>한남</option>
+			<option value=5>신갈</option>
+			<option value=11>천안</option>
+			<option value=14>남이</option>
+			<option value=4>판교</option>
+			<option value=5>신갈</option>
+			<option value=6>수원</option>
+			<option value=7>기흥</option>
+			<option value=8>동탄</option>
+			<option value=9>오산</option>
+			<option value=10>안성</option>
+			<option value=11>천안</option>
+			<option value=12>목천</option>
+			<option value=13>청주</option>
+			<option value=14>남이</option>
+			<option value=15>청원</option>
+			<option value=16>신탄진</option>
+			<option value=17>회덕</option>
+			<option value=18>대전</option>
+			<option value=19>비룡</option>
+			<option value=20>옥천</option>
+			<option value=21>금강</option>
+			<option value=22>영동</option>
+			<option value=23>황간</option>
+			<option value=24>추풍령</option>
+			<option value=25>김천</option>
+			<option value=26>구미</option>
+			<option value=27>남구미</option>
+			<option value=28>왜관</option>
+			<option value=29>칠곡</option>
+			<option value=30>금호</option>
+			<option value=31>북대구</option>
+			<option value=32>도동</option>
+			<option value=33>동대구</option>
+			<option value=34>경산</option>
+			<option value=35>영천</option>
+			<option value=36>건천</option>
+			<option value=37>경주</option>
+			<option value=38>언양</option>
+			<option value=39>서울산</option>
+			<option value=40>통도사</option>
+			<option value=41>양산</option>
+			<option value=42>노포</option>
+			<option value=43>영락</option>
+			<option value=44>구서</option>
+		</select> 
+		</span>
+		도착지
+		<select id=dest>
+			<option value=-1>나들목</option>
+			<option value=0>한남</option>
+			<option value=1>반포</option>
+			<option value=2>서초</option>
+			<option value=3>양재</option>
+			<option value=4>판교</option>
+			<option value=5>신갈</option>
+			<option value=6>수원</option>
+			<option value=7>기흥</option>
+			<option value=8>동탄</option>
+			<option value=9>오산</option>
+			<option value=10>안성</option>
+			<option value=11>천안</option>
+			<option value=12>목천</option>
+			<option value=13>청주</option>
+			<option value=14>남이</option>
+			<option value=15>청원</option>
+			<option value=16>신탄진</option>
+			<option value=17>회덕</option>
+			<option value=18>대전</option>
+			<option value=19>비룡</option>
+			<option value=20>옥천</option>
+			<option value=21>금강</option>
+			<option value=22>영동</option>
+			<option value=23>황간</option>
+			<option value=24>추풍령</option>
+			<option value=25>김천</option>
+			<option value=26>구미</option>
+			<option value=27>남구미</option>
+			<option value=28>왜관</option>
+			<option value=29>칠곡</option>
+			<option value=30>금호</option>
+			<option value=31>북대구</option>
+			<option value=32>도동</option>
+			<option value=33>동대구</option>
+			<option value=34>경산</option>
+			<option value=35>영천</option>
+			<option value=36>건천</option>
+			<option value=37>경주</option>
+			<option value=38>언양</option>
+			<option value=39>서울산</option>
+			<option value=40>통도사</option>
+			<option value=41>양산</option>
+			<option value=42>노포</option>
+			<option value=43>영락</option>
+			<option value=44>구서</option>
+		</select> 
+		<input id=btnInter type=button value=경유지추가>
+
+	</div>
+	<div id="map" style="width:650px;height:400px;"></div>
+</body> 
+</html> 
+
